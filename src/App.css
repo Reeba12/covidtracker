@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App__dropdown{
+  color: #fff;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.App__dropdown:focus{
+border-style: none;
+}
+.line{
+  margin: 15px 10px;
+}
+.App__boxes{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+@media (max-width:650px){
+  .App__boxes{
+    flex-direction: column;
+  }
+  .Boxinfo{
+    margin: 10px;
+    width: 15em;  
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Boxinfo{
+  margin: 10px;
+  width: 20em;  
+  line-height: 40px;
+}
+.Box__title{
+  background-color: #2e2e2e;
+  color:#cfcfcf  ;
+}
+.Box__cases{
+  color: red;
+}
+.Box{
+  background-color: #2e2e2e;
+  color:#cfcfcf  ;
+}
+.App_History{
+  margin-top: 20px;
+  display: flex;
+ justify-content: space-evenly;
+ margin-left: 10px;
+ margin-right: 10px;
+}
+@media (max-width :990px) {
+  .App_History{
+    flex-direction: column
+  }
+}
+.Graphs{
+  flex: 0.9;
   display: flex;
   flex-direction: column;
+}
+.Leftup{
+  /* flex: 0.5; */
+  border: 1px solid #fff;
+  background-color: #2e2e2e;
+  padding: 10px 30px;
+  margin: 0px 0px 10px 0px;
+  border-radius: 5px;
+}
+.Leftdown{
+ 
+  border: 1px solid #fff;
+  background-color: #2e2e2e;
+  padding: 50px 30px;
+  margin: 0px 0px 10px 0px;
+  border-radius: 5px; 
+  height: 100%;
+}
+.Leftdown h2{
+  margin-bottom: 30px;
+}
+.Right{
+  background-color: #2e2e2e;
+  margin: 0px 0px 10px 0px;
+  }
+.uperGraph{
+  margin-bottom: 80px;
+}
+.uperGraph h2{
+  margin: 30px 0px;
+ }
+.tabledata{
+  margin-top: 15px;
+  background-color: #2e2e2e;
+  color:#cfcfcf  ;
+  overflow-y: scroll;
+  height: 440px;
+}
+td{
+  padding: 5px;
+}
+tr{
+  display: flex;
+  justify-content: space-between;
+}
+.tabledata tr:nth-of-type(odd){
+background-color: #3d3d3d;
+}
+.lastdiv:hover{
+background-color: red;
+}
+.btn:hover{
+ background-color: red;
+}
+.graphHeading{
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.days__dropdown{
+  color: rgb(187, 171, 171);
+  background-color: #fff;
+  border-radius: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Doughnut{
+  margin-top: 40px;
+}
+.DoughnutHeading{
+  margin: 10px 0;
+  text-align: center;
 }
